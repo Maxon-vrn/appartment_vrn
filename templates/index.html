@@ -41,13 +41,14 @@
 
 </head>
 
-<body class="fon1" style="margin-right: 1px;margin-left: 1px;font-family: Verdana, Geneva, Tahoma, sans-serif;" > <!-- общий фон страницы!--<body style="background-color:powderblue;"> зделает фон нежно голубого цвета-->
+<body class="fon1" style="margin-right: 1px;margin-left: 1px;font-family: Verdana, Geneva, Tahoma, sans-serif;" > 
+  <!-- общий фон страницы!<body style="background-color:powderblue;"> зделает фон нежно голубого цвета-->
   
     
   
-    {% include "menu.html" %} <!---подключение меню, как отдельный шаблон на все страницы-->
+    {% include "menu.html" %} <!--подключение меню, как отдельный шаблон на все страницы-->
     
-    <!------Основное------------------------------------------------------------------------------------------------------------------------------>
+    <!------Основное---------------------------------------------------------------------------------------------------------------->
   <div class="head" style="width:100%;margin-top: -65px;margin-bottom: -10px;" >
 
     <p style="font-size:65px;cursor: pointer;
@@ -84,6 +85,7 @@
          <tr><!--первая строка-->
             <td align="center" style="padding-bottom: 2%;"><!--первая ячейка-->
               <!--<img src="{{url_for('static',filename='img/2_square.jpg')}}" alt='Здесь должно быть изображение пары на фоне квартиры'-->
+              <!--2й вариант работает при выкладке не гит хаб-->
               <img src="https://maxon-vrn.github.io/appartment_vrn/static/img/2_square.jpg" alt="Здесь должно быть изображение пары на фоне квартиры"
               width="400" height="400" style='border-radius: 100%;border: 2px solid tomato;box-shadow: 0 0 100px rgb(105, 93, 93)'>
               <!--чтобы сделать круглое изображение ,нужно вставить сначала квадратное изображение-->
@@ -131,7 +133,10 @@
               
             </td>
             <td style="padding-bottom: 3%;">
-              <img src="{{url_for('static',filename='img/3_square.jpg')}}" alt='Здесь должно быть изображение домика с монетами)'
+
+              <!--<img src="{{url_for('static',filename='img/3_square.jpg')}}" alt='Здесь должно быть изображение домика с монетами)'-->
+              <!--этот вариант отображается на гит хаб-->
+              <img src="https://maxon-vrn.github.io/appartment_vrn/static/img/3_square.jpg" alt='Здесь должно быть изображение домика с монетами)'
                width="400" height="400" style='border-radius: 100%;border: 2px solid tomato;box-shadow: 0 0 100px rgb(105, 93, 93)'>
             </td>
           </tr>
@@ -417,7 +422,8 @@
                 <li>тел:8-960-101-90-39</li>
                 <li>Fisenko_maxim@mail.ru</li>
                 <li>г.Воронеж</li>
-                <lo><a href="https://vk.com/fisenko_maxim/" target="_blank"><img src="static/img/vk.png" style="width:42px;height:42px;
+                <lo><a href="https://vk.com/fisenko_maxim/" target="_blank"><img
+                   src="https://maxon-vrn.github.io/appartment_vrn/static/img/vk.png" style="width:42px;height:42px;
                 "></a><a href="https://t.me/Fisenko_Maxim/" target="_blank"><img src="static/img/telegram.png" style="width:42px;height:42px;
                 "></a><a href="https:///" target="_blank"><img src="static/img/youtube.png" style="width:42px;height:42px;
                 "></a></lo>
