@@ -45,7 +45,8 @@
   <!-- общий фон страницы!<body style="background-color:powderblue;"> зделает фон нежно голубого цвета-->
       
   
-    <!-- {% include "menu.html" %} подключение меню, как отдельный шаблон на все страницы-->
+    <!--{% include "menu.html" %}
+    <!--подключение меню, как отдельный шаблон на все страницы-->
     <!--просто меню в лендинг-->
     <h4 align="center" style="background-color: rgba(10, 10, 10, 0.6);color:white;margin-top: -10px;margin-bottom: -16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -87,9 +88,24 @@
       <i style="font-family:Georgia, 'Times New Roman', Times, serif
       ">Мы можем долго рассуждать с Вами на эту тему, но цифры наглядно покажут тенденцию рынка!</i></h2>
     
-    {% include "https://maxon-vrn.github.io/appartment_vrn/templates/diagramma.html" %} <!--подключение страницы с кодом диаграммы\гистограммы-->
+    {% include "diagramma.html" %} <!--подключение страницы с кодом диаграммы\гистограммы-->
+    <!--<div w3-include-html="templates\diagramma.html"></div>  Don`t see-->
+    <!--<a href="diagramma.html">diagramma</a>   don`t work-->
     <!------------------------------------------------------------------------------------------------------------------------------------------->    
+    <!--Подключение внешних скриптов-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script> 
+
     
+
+    <div id="container" class="chart_wrap"></div>  <!---подключение/ создание пустого графика-->
+    
+
+    <script src="https://maxon-vrn.github.io/appartment_vrn/static/js/diagramma.js"></script>  <!--подключение отдельного файла из папки js---->
+    <!-- <script> в противном случае тут пишется код js</script>-->
+
+
     <!-------Общая информация рассуждение о ценах и т.п.-------------------------------------------------------------------------------------------------------------------->
     <section> <!--секция\раздел-->
       <div id="c1" style ="padding: 20px;font-family:Georgia, 'Times New Roman', Times, serif">
