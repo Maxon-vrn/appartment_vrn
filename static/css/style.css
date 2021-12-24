@@ -1,0 +1,230 @@
+.button:link,.button:visited{
+  background-color: tomato;
+  color:white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+.button:hover,.button:active{
+  background-color: rgb(255, 52, 52);
+  /**font-size:120%;**/
+  text-align: center;
+  text-decoration:underline;
+  
+}
+
+
+.test_class {
+  background-color: lightblue;
+  color: black;
+  padding: 30px;
+  text-align: center;
+  }
+
+.text-centr{
+  text-align: center;
+}
+
+.footer-left{
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+.footer-right{
+  float:"right"
+
+}
+
+/*стиль для таблицы - виджетов застройщиков и ипотеки*/
+.td{
+  width:25%;
+  border-style:none;   /*outset*/
+  text-align: center;
+  padding: 30px
+}
+.tr {
+  text-align:center
+}
+
+/*фон фото в разделе захвата контакта*/
+.head  {
+  background:url(fon_1.jpg); /* Фоновый цвет и фоновый рисунок, он берет фото из папки css!!!!*/
+  height: 800px;
+  background-attachment: fixed; /* Фон страницы фиксируется */
+  
+
+  background-repeat: no-repeat; /* Изображение не повторяется по горизонтали */
+  background-size: cover;/*Если вы хотите, чтобы фоновое изображение покрыло весь элемент,
+   вы можете установить для background-size свойства значение cover. */
+}
+
+/*фон фото в разделе захвата контакта*/
+.zahvat {
+  background:url(table.png); /* Фоновый цвет и фоновый рисунок, он берет фото из папки css!!!!*/
+  
+  background-attachment: fixed; /* Фон страницы фиксируется */
+
+  background-repeat: no-repeat; /* Изображение не повторяется по горизонтали */
+  background-size: cover;/*Если вы хотите, чтобы фоновое изображение покрыло весь элемент,
+   вы можете установить для background-size свойства значение cover. */
+
+}
+.fon{
+  background:url(f7.jpg);
+  background-attachment: fixed; /* Фон страницы фиксируется */
+  opacity: 1;
+  color:black; /*Цвет текста на странице*/
+  background-repeat: no-repeat; /* Изображение не повторяется по горизонтали */
+  background-size: cover;/*Если вы хотите, чтобы фоновое изображение покрыло весь элемент,
+   вы можете установить для background-sizeсвойства значение cover. */
+}
+.fon1{
+  background-color:rgba(10, 10, 10, 0.6);
+  background-attachment: fixed; /* Фон страницы фиксируется */
+  opacity: 1;
+  color:white; /*Цвет текста на странице*/
+ }
+.pp{
+  list-style:square inside url(22.jpg);/*не подключает фотографию к спискам-конфликтует с файлом css*/
+  width: 1;
+  height: 1;
+}
+
+/*размер шрифта в таблице с перечислениями*/
+.p{
+  font: 16px verdana;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/*форма заявки оформление полей*/
+.r{
+  border-radius: 10px;
+  border: 2px solid tomato;
+  box-shadow: 0 0 30px rgb(129, 127, 127);
+  
+}
+/**/
+
+/*слайдер*/
+.slider {
+  position: relative;
+  max-width: 680px;
+  margin: 50px auto;
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: white;
+}
+#btn4:checked~.switch label[for="btn4"] {
+  background-color: white;
+}
+#btn5:checked~.switch label[for="btn5"] {
+  background-color: white;
+}
+
+
+
+.slider-inner {
+  overflow: hidden;
+  
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink:0;
+}
+
+#btn1:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+  transform: translateX(-100%);
+}
+
+#btn3:checked~.slider-inner .slides {
+  transform: translateX(-200%);
+}
+#btn4:checked~.slider-inner .slides {
+  transform: translateX(-300%);
+}
+#btn5:checked~.slider-inner .slides {
+  transform: translateX(-400%);
+}
+
+/*конец слайдера*/
+
+
+/*отзывы ---------------------------------------------------------------------------------------------------------------------------------------*/
+.container {   width: 55%;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px; /* скругление углов блока */
+  padding: 16px; /* внутренние поля */
+  margin: 16px auto; /* внешние отступы */
+}
+.container img {
+  float: left; /* обтекание слева */
+  margin-right: 30px; /* пространство между аватаркой и абзацем */
+  border-radius: 50%; /* скругляет аватарку */
+  width: 90px;
+}
+
+.container span {
+  font-size: 18px;
+  margin-right: 15px;
+}
+@media (max-width: 450px) {   /*это отвечает за адаптивность отзывов при окне при ширине окна меньше 450px*/
+  .container {
+    text-align: center;
+  }
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+/*-----конец отзывов---------------------------------------------------------------------------------------------------------*/

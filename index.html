@@ -1,0 +1,503 @@
+<!doctype html>
+
+<html lang="ru"><!--язык старницы:обеспечивает интерпритацию и индексацию-->
+<head>
+  <meta charset="utf-8"><!--кодировка страницы:обеспечивает интерпритацию и индексацию-->
+
+  <title>Риелтор в Воронеже</title> <!--важный элемент сео оптимизации-->
+
+  <style>
+    
+  
+    /*body {background-color: antiquewhite;}*/
+    footer{ background-color: black;color: white;text-align :match-parent; }
+  </style>
+
+    <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="Фисенко Максим">
+    <meta name="keywords" content="Недвижимость,авито недвижимость,квартира,жк,застройщик,новые жк,
+    квартира в Воронеже,недвижимость Воронежа,Ипотека,Новостройки"> <!--определите ключевые слова для поисковых систем-->
+
+    <meta name="description" content="Агентские услуги купли\продажи недвижимости,оформление\одобрение ипотеки.">
+     <!--описание вашей веб страницы-->
+
+    <meta http-equiv="refresh" content="60"> <!--обновление страницы\документа каждые 60 секунд-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--Настройка области просмотра, чтобы ваш сайт выглядел хорошо на всех устройствах:-->
+  
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> <!--подключение файла со стилями-->
+
+<!--Этот раздел содержит: заголовок, или\и лоотип\значок, и\или авторство-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><!--подключение стилей шрифтов-->
+
+
+</head>
+
+<body class="fon1" style="margin-right: 1px;margin-left: 1px;font-family: Verdana, Geneva, Tahoma, sans-serif;" > <!-- общий фон страницы!--<body style="background-color:powderblue;"> зделает фон нежно голубого цвета-->
+  
+    
+  
+    {% include "menu.html" %} <!---подключение меню, как отдельный шаблон на все страницы-->
+    
+    <!------Основное------------------------------------------------------------------------------------------------------------------------------>
+  <div class="head" style="width:100%;margin-top: -65px;margin-bottom: -10px;" >
+
+    <p style="font-size:65px;cursor: pointer;
+    background-attachment: fixed;margin-right: 20px;">&#127877</p><!--вставка эмодзи-->
+
+    <h1 style="padding-top: 4%;padding-left: 8%;padding-right: 8%;letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-shadow: 4px 4px 5px black;font-size: 4vw;
+    color: tomato" align="center"><a style="font-size: 10vw;">Недвижимость </a> самый стабильный вклад во все времена!</h1>
+
+    
+    
+  </div>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!--------График и текст----------------------------------------------------------------------------------------------------------------->
+    <h2 align="center" style="background-color:white;color:black;margin-top: -20px;margin-bottom: -1px;padding-top: 12px;">
+      <i style="font-family:Georgia, 'Times New Roman', Times, serif
+      ">Мы можем долго рассуждать с Вами на эту тему, но цифры наглядно покажут тенденцию рынка!</i></h2>
+    
+    {% include "diagramma.html" %} <!---подключение страницы с кодом диаграммы\гистограммы-->
+    <!------------------------------------------------------------------------------------------------------------------------------------------->    
+    
+    <!-------Общая информация рассуждение о ценах и т.п.-------------------------------------------------------------------------------------------------------------------->
+    <section> <!--секция\раздел-->
+      <div id="c1" style ="padding: 20px;font-family:Georgia, 'Times New Roman', Times, serif">
+        <h2 style="color: tomato;text-shadow: 4px 4px 5px black" align="center"><b>Давайте немного порассуждаем ...</b></h2>
+        
+        
+
+        <table style="width:100%;"><!--добавил границы для таблицы чтобы лучше отформатировать и увидеть ее-->
+         <tr><!--первая строка-->
+            <td align="center" style="padding-bottom: 2%;"><!--первая ячейка-->
+              <img src="{{url_for('static',filename='img/2_square.jpg')}}" alt='Здесь должно быть изображение пары на фоне квартиры'
+              width="400" height="400" style='border-radius: 100%;border: 2px solid tomato;box-shadow: 0 0 100px rgb(105, 93, 93)'>
+              <!--чтобы сделать круглое изображение ,нужно вставить сначала квадратное изображение-->
+            </td>
+            <td class="p" style="font-size: 1vw;"> <!--вторая ячейка-->
+              <h3 >Как показывает практика, существуют ярые сторонники вложения денег в квадратные метры и те кто оговаривают :</h3> 
+                <h3 align="right"><i>"цены станут ниже,недвижимость рухнет, потом и вложимся!"</i>. </h3><br>
+                <p style="line-height: 1.8;font-family: Verdana, Geneva, Tahoma, sans-serif;">Рассуждение на тему что выгодно?, действительно цены упали?, м.<sup>кв</sup> 
+                  обратите внимание на изменение цен по годам- общая тенденция к повышенибю ценю<br>
+                Необходимо сделать поправку на конкретные квартиры по районам города<br>
+                Особенности каждого района города: привязка к поликлинике, школе,садику, транспортной развязке и т.п.<br>
+                Чтото тут еще!<br>
+                Чтото тут еще!<br>
+                Чтото тут еще!</p>
+                
+            </td>
+         </tr>
+       </table>
+
+      </div>
+    </section> 
+      <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+      <!-------Секция с аргуметами за покупку недвижимости---------------------------------------------------------------------------------------------------------------------->
+    
+    <section style="color: black;background-color: white;">
+        <div><h2 align="center" style="padding-top:1%;font-family:Georgia, 'Times New Roman', Times, serif;overflow-x: auto;overflow-y: auto;
+          ">Наши аргументы за покупку именно сейчас!!!</h2> </div> <!----заголовок-->
+        <table style="width:100%">
+          <tr>
+            <td class="p" style="font-size: 1vw;">
+              <ul class="pp">
+                <li >Уменьшение рисков обесценивания недвижимости относительно <u><i>"наличных".</i></u></li>  <!---столбец с перечислением-->
+                
+                <li >Деньги находящиеся в м.<sup>кв</sup> максимально защищены от форсмажорных обстоятельств.</li>
+                <li >Медленный процесс амортизации недвижимости позволит вам при неодходимости продать ее через год-три за туже сумму,а может и выше.</li>
+                <li >Возможность сразу сдать ее квартирантам,уменьшив нагрузку на семейный бюджет.</li>
+                <li >Фундаментальность - всегда можно продать\обменять\сдать.</li>
+                <li>Для инвесторов есть возможность вложится в перспективных районах новостройки на короткий или длительный срок.</li>
+                <li>Дефицитная ниша жилья среднего и коттеджного класса с автономным поквартирным отоплением.</li>
+                
+                <li>Земельные участки - это как вклад в <u>Банке</u>, только надежнее!</li>
+                <li>Коммерческая недвижимость - это не быстрые деньги,но сейчас есть очень выгодные цены и большой выбор вариантов.</li><br><br>
+              </ul>  
+              
+            </td>
+            <td style="padding-bottom: 3%;">
+              <img src="{{url_for('static',filename='img/3_square.jpg')}}" alt='Здесь должно быть изображение домика с монетами)'
+               width="400" height="400" style='border-radius: 100%;border: 2px solid tomato;box-shadow: 0 0 100px rgb(105, 93, 93)'>
+            </td>
+          </tr>
+        </table>  
+        
+          
+        
+    </section>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    
+    <!------Вы еще сомневаетесь - первая попытка взять контакт!---------------------------------------------------------------------------------------------------------------------------->
+    <section style="height: 480px;color: black;background-color:white;margin-top: -2%;font-family:Georgia, 'Times New Roman', Times, serif">
+      <hr>
+      <h2 align="center" style="padding-top: 2%"><font size="10" color="tomato" >Вы еще сомневаетесь?</font></h2>
+      <h3 align="center"><font size="8" color="tomato" >Тогда листайте дальше и мы Вас убедим!</font></h3>
+      <h3 align="center"><font size="7" color="tomato" >или ... </font></h3>
+
+      <!--кнопка--неработает перенаправление якорь
+      <div><button align="center" id="c8" 
+      style="border-radius: 10px;background-color:tomato;color: white;
+      box-shadow: 0 0 100px rgb(255, 161, 161);
+      border: none;
+      padding: 15px 32px; cursor: pointer; 
+      margin: 2% 45%;" >Оставить заявку</button>
+      </div>-->
+
+      <a class="button" href="#form" style="
+        box-shadow: 0 0 100px rgb(255, 161, 161);cursor: pointer;margin: 2% 45%;">оставить заявку</a>
+
+
+    </section>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!-----Представители застройщиков------------------------------------------------------------------------------------------------------>
+    <section>
+      <div style="height: 550px;font-family:Georgia, 'Times New Roman', Times, serif">
+      <h2 id ="c2" align="center"><b>Мы работаем со всеми представителями строительного рынка.</b> </h2>
+      <h6 align="center">В данном разделе будут представлены логотипы компаний вместо названий.</h6>
+
+        <table style="width:100%"> 
+      <!--Можно оптимизировать настроку обоих таблиц и задать стиль\правила на странице css и применить к обоим сразу-->  
+ 
+          <tr align="center" width="100" height="100" > 
+            <td class="th td" style="width:25%">ДСК</td>
+            <td class="th td" style="width:25%">ВЫБОР</td>
+            <td class="th td" style="width:25%">РАЗВИТИЕ</td>
+            <td class="th td" style="width:25%">Куб-3</td>
+          </tr>
+          <tr align="center" width="100" height="100">
+            <td>КЖИ</td>
+            <td>ВДК</td>
+            <td>ВОРОНЕЖСТРОЙ</td>
+            <td>Строймонтаж-99</td>
+          </tr>
+          <tr align="center" width="100" height="100">
+            <td>Стел-Инвест</td>
+            <td>Бик</td>
+            <td>Инстеп</td>
+            <td>Сму-2</td>
+          </tr>
+        </table>
+      </div>
+
+    </section>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!------Представители ипотечного сегмента--------------------------------------------------------------------------------------------------->
+    <section style="color: black;background-color: white">
+        <h2 align="center" style="padding-top: 1%;font-family:Georgia, 'Times New Roman', Times, serif"><b>Мы работаем со всеми представителями <!--Сб,втб и др-->ипотечного кредитования.</b> </h2>
+        <h6 align="center">В данном разделе будут представлены логотипы компаний вместо названий после согласования.</h6>
+      <table style="width:100%" >
+ 
+          <tr align="center" width="100" height="100" >
+            <td class="th td">Сбербанк</td>
+            <td class="th td" >ВТБ</td>
+            <td class="th td">Россельхоз</td>
+            <td class="th td">ОТП</td>
+          </tr>
+          <tr align="center" width="100" height="100">
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr align="center" width="100" height="100">
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+      </table>
+          
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+     
+    <!---------Описание шагов работы с клиентом -------------------------------------------------------------------------------------------------------------------->
+    <section>
+      <div align="center"> 
+        <h2 id="c3" style="border-top: 2%;font-family:Georgia, 'Times New Roman', Times, serif" >Как мы работаем с вами?</h2>
+        <p style="font-size: 20px"><u> На результат!</u></p>
+        <table style="width:100%">
+          <tr>
+            <td class="th td" style="width:25%;font-size:70px">&#9312</td>
+            <td class="th td" style="width:25%;font-size:70px">&#9313</td>
+            <td class="th td" style="width:25%;font-size:70px">&#9314</td>
+          </tr>
+          <tr>
+            <td style="padding-left: 1%;padding-right: 1%;">Потребности: Выявление потребностей клиента и способа приобретения им объекта недвижимости.</td>
+            <td style="padding-left: 1%;padding-right: 1%;">Разнообразие: Предоставление выбора объектов недвижимости в соответствие с выше выявленными пожеланиями и  возможностями.</td>
+            <td style="padding-left: 1%;padding-right: 1%;">Экономия: Предоставьте всю бумажную работу нашим специалистам. Наша цель – максимальная помощь клиенту и экономия его
+               времени и нервов. Мы ведем своих клиентов с начала и до получения ими на руки квартиры с полным комплектом документов.</td>
+          </tr>
+          <tr>
+            <td class="th td" style="width:25%;font-size:70px">&#9315</td>
+            <td class="th td" style="width:25%;font-size:70px">&#9316</td>
+            <td class="th td" style="width:25%;font-size:70px">&#9317</td>
+          </tr>
+          <tr>
+            <td style="padding-left: 1%;padding-right: 1%; padding-bottom: 2%;">Гарантии: наше агенство является одним из ведущих в нашем городе. Наша репутация идет впереди нас. Выбирая нас,
+               Вы будите уверены, что на выходе получите качественную услугу, экономя время, деньги и свои нервные клетки. 
+               Мы гарантируем Вам юридическую  чистоту сделки.</td>
+            <td style="padding-left: 1%;padding-right: 1%;padding-bottom: 2%;">Выгода: в нашей команде трудятся не только опытные риелторы, юристы, но и специалисты, чьи услуги  могут понадобиться 
+              на некоторых этапах сделки: оценщики, ипотечные брокеры, представители банка, страховщики. И все это вы можете получить в стенах 
+              нашей компании.</td>
+              <td style="padding-left: 1%;padding-right: 1%;padding-bottom: 2%;">Консультацию по всем правовым вопросам.В т.ч. возврат НДФЛ на квартру(который может достигать 260 т.рублей).</td>
+          </tr>
+        </table>
+        
+      </div>
+    </section> 
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--слайдер   -->
+    <div class="slider">
+      <input type="radio" name="switch" id="btn1" checked>
+      <input type="radio" name="switch" id="btn2">
+      <input type="radio" name="switch" id="btn3">
+      <input type="radio" name="switch" id="btn4">
+      <input type="radio" name="switch" id="btn5">
+
+      
+      <div class="switch">
+        <label for="btn1"></label>
+        <label for="btn2"></label>
+        <label for="btn3"></label>
+        <label for="btn4"></label>
+        <label for="btn5"></label>
+      </div>
+      
+      <div class="slider-inner">
+        <div class="slides">
+          <img src="static\img\слайдер\Слайд1.JPG"/>
+          <img src="static\img\слайдер\Слайд2.JPG"/>
+          <img src="static\img\слайдер\Слайд3.JPG"/>
+          <img src="static\img\слайдер\Слайд4.JPG"/>
+          <img src="static\img\слайдер\Слайд5.JPG"/>
+
+        </div>
+      </div>
+      
+    </div>
+    <!----------конец слайдера------------------------------------------------------------------------------------------------------------>
+
+    <!------------Отзывы---------------------------------------------------------------------------------------------------------------------->     
+    <section style="color: black;background-color: white;margin-bottom: -16px; ">
+      <div style="padding-top :15px;padding-bottom: 15px;"> 
+        <h2 id="с4" align="center" style="font-family:Georgia, 'Times New Roman', Times, serif" >Отзывы наших клиентов</h2>
+        <h4 align="center" style="padding-left: 50px; padding-right: 50px;">Можно написать много красивых слов о том, что мы – лучшее агенство недвижимости, существующее на рынке недвижимости вот уже…
+           целых 18 лет, помогающее своим клиентам в приобретении, продаже или обмене своей недвижимости. </h4>
+           
+        <h4 align="center" style="padding-left: 50px; padding-right: 50px;">НО… за нас все говорит наша репутация! Мы предпочитаем делать, а не говорить. 
+           Благодарные  отзывы наших клиентов – вот результат нашей работы и самое главное – мотивация для дальнейшего продолжения 
+           нашей деятельности!</h4>
+           <p></p><br>
+      
+
+      <div class="container">
+        <img src=" static\img\foto_1.jpeg" alt="avatar">
+        <p><span>Maxon</span>city Moscow</p>
+        <p>Взял ипотеку на новостройку в долларах! Ни о чем не жалею! Отличная фирма.</p>
+      </div>     
+      <div class="container">
+        <img src="static\img\foto_2.jpg " alt="avatar">
+        <p><span>Sancho</span> city Voronesh</p>
+        <p>Покупал залоговую квартиру у должника. Помогли оформить все в лучшем виде.</p>
+      </div>
+      <div class="container">
+        <img src="static\img\foto_3.jpg" alt="avatar">
+        <p><span>Verdan</span> city Voronesh</p>
+        <p>Помогли рефинансировать ипотеку уже в 3й раз... Эту я точно быстро закрою!!!</p>
+      </div> 
+      <div class="container">
+        <img src="static\img\foto_4.png" alt="avatar">
+        <p><span>Vern</span> city St.Petersburg</p>
+        <p>Помогли оформить землю на пустыре. Говорят было какое-то кладбище. Я доволен,соседи тихие. Приходите в гости все покажу! </p>
+      </div>      
+
+      </div>
+    </section> 
+    <!------конец отзывов------------------------------------------------------------------------------------------------------------------------>
+        
+  <!--Форма заявки от клиента-------------------------------------------------------------------------------------------------------------------->
+  <table class="zahvat" style="width:100%;" ><!--фон из фото-->
+  
+
+  <tr>
+    <td  style="width:70%;font-size: 42px;color: white;text-shadow: 4px 4px 5px black;font-family:Georgia, 'Times New Roman', Times, serif" 
+    align='center'> У вас остались сомнения?  Давайте мы их развеем!!!
+      <!--текстовая информация для формы захвата контакта--><br><p> </p>
+      <lo > Наши специалисты смогут ответить на все Ваши вопросы!!!</lo></td>
+    <td >
+      <form  method="post" autocomplete="on" style="padding-right: 5%;padding-left: 5px;"> <!--method="post"-метоб зашифрованой передачи данныхформ, autocomplete="on"- автозаполнение форм вкл-->
+        <fieldset>
+          <a name="form"></a>
+          <legend   style="color: white; padding-left: 30px; text-shadow: 4px 4px 5px black;" >Форма заявки:</legend>
+          <!--<label for="fname">Как к Вам обращаться</label><br>-->
+          <input class="r" style="padding-left: 15px;margin-left: 15px;" type="text" id="fname" name="fname" placeholder="имя" maxlength="30" size="40"  required ><br><!--pattern="[А-Яа-я]{30}"-->
+          <!--<label for="fnumber">Контактный номер телефона</label><br>-->
+          <input class="r" style="padding-left: 15px;margin-left: 15px;" type="int" id="fnumber" name="fnumber" placeholder="ваш номер" maxlength="11" pattern="[7-8]{1}[0-9]{10}" size="40" required><br>
+          <!--<label for="email">Ваша почта для корреспонденции</label><br>-->
+          <input class="r"  style="padding-left: 15px;margin-left: 15px;"type="email" id="email" name="email" placeholder="почта*" maxlength="30" size="40"><br>
+
+          <sub style="color: white;margin-left: 15px;text-shadow: 4px 4px 5px black;"><i>*Спам</i> расссылкой не занимаемся! Ценим личное пространство.</sub><br>
+
+          <textarea class="r"  style="padding-left: 10px;padding-right: 10px;margin-left: 15px;"
+           name="message" rows="10" cols="40" placeholder="Поле для дополнительной информации на Ваше усмотрение." ></textarea><br>
+
+          <i style="color: white;margin-left: 15px;padding-left: 15px;
+          padding-right: 5px;text-shadow: 4px 4px 5px black;">Нажимая на <u>кнопку</u>, вы даёте согласие на обработку</i>
+          <i style="color: white;margin-left: 15px;padding-left: 10px;
+          padding-right: 5px;"> персональных данных.</i><br><br>
+
+          <input style="border-radius: 10px;background-color:tomato;color: white;box-shadow: 0 0 100px rgb(255, 161, 161);border:none; 
+          padding: 15px 32px;cursor: pointer;margin-left: 15px;"
+           type="submit" value="Отправить">
+        </fieldset>
+      </form>    
+      </td>
+    </tr>
+  </table>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+
+    
+     
+     
+<!--Footer------------------->
+    <section>
+      <footer >
+        
+        <table  
+         style="border: 1px solid white;
+         width:100%; height:40%;
+          padding: 20px;
+          border-spacing: 15px;
+          font-size: 120%">
+                      
+          <tr>
+            <td ><i style="font-family:Georgia, 'Times New Roman', Times, serif">Недвижимость:</i>
+              <ul>
+                <li>Новостройки</li>  <!--нужно подключить ссылки на соответствующие разделы-->
+                <li>Вторичный фонд</li>
+                <li>Коммерция</li>
+                <li>Частный сектор</li>
+              </ul>
+            </td>
+
+            <td><i style="font-family:Georgia, 'Times New Roman', Times, serif">Услуги:</i>
+              <ul>
+                <li>Ипотека</li>
+                <li>Военная ипотека</li>
+                <li>Сертификаты</li>
+                <li>Иное</li>
+              </ul>
+            </td>
+
+            <td id="c5"><i style="font-family:Georgia, 'Times New Roman', Times, serif">Контакты:</i>
+              <ul>
+                <li>тел:8-960-101-90-39</li>
+                <li>Fisenko_maxim@mail.ru</li>
+                <li>г.Воронеж</li>
+                <lo><a href="https://vk.com/fisenko_maxim/" target="_blank"><img src="static/img/vk.png" style="width:42px;height:42px;
+                "></a><a href="https://t.me/Fisenko_Maxim/" target="_blank"><img src="static/img/telegram.png" style="width:42px;height:42px;
+                "></a><a href="https:///" target="_blank"><img src="static/img/youtube.png" style="width:42px;height:42px;
+                "></a></lo>
+                
+              </ul>
+            </td>
+
+            <!--Maps-->
+            <td id="c6">
+              <ul>
+                <div id='c6'style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/193/voronezh/?utm_medium=mapframe&utm_source=maps" 
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Воронеж</a>
+                  <a href="https://yandex.ru/maps/193/voronezh/house/ulitsa_geroyev_sibiryakov_11/Z0AYdwNgSUMDQFtrfXp0cntmZg==/?ll=39.141460%2C51.654065&utm_medium=mapframe&utm_source=maps&z=17.91" 
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Героев Сибиряков, 11 — Яндекс.Карты</a>
+                  <iframe src="https://yandex.ru/map-widget/v1/-/CCUujCuHTB" width="100%" height="300" 
+                  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+              </ul>  
+            </td>
+
+          </tr>          
+        </table>
+        <p style="background-color: black;color: white;
+         padding-right: 20px;padding-left: 20px; padding-bottom: 25px;padding-top: 5px;">
+             МАТЕРИАЛЫ ОПУБЛИКОВАННЫЕ НА САЙТЕ  ПОЛУЧЕНЫ ОТ ЗАСТРОЙЩИКОВ ИЛИ ИЗ ОТКРЫТЫХ ИСТОЧНИКОВ. САЙТ НОСИТ ИСКЛЮЧИТЕЛЬНО ИНФОРМАЦИОННЫЙ И ОЗНАКОМИТЕЛЬНЫЙ ХАРАКТЕР, И НИ ПРИ КАКИХ УСЛОВИЯХ НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ, ОПРЕДЕЛЯЕМОЙ ПОЛОЖЕНИЯМИ ПУНКТА 2 СТАТЬИ 437 ГРАЖДАНСКОГО КОДЕКСА РОССИЙСКОЙ ФЕДЕРАЦИИ.
+
+          ВСЕ ПРАВА НА ИЗОБРАЖЕНИЯ И ТЕКСТЫ ПРИНАДЛЕЖАТ ИХ ПРАВООБЛАДАТЕЛЯМ. В СЛУЧАЕ, ЕСЛИ ВЫ СЧИТАЕТЕ, ЧТО ПУБЛИКАЦИЯ ТОГО ИЛИ ИНОГО МАТЕРИАЛА НАРУШАЕТ ЗАКОННЫЕ ПРАВА ПРАВООБЛАДАТЕЛЯ, СВЯЖИТЕСЬ С НАМИ ПО ЭЛЕКТРОННОЙ ПОЧТЕ.</p>
+      </footer>
+
+      
+      
+    </section>
+    <!------------------------------------------------------------------------------------------------------------------------------------------->
+   
+  
+
+  
+
+
+  
+        <!--
+      <img src="html5.gif" alt="HTML5" style="width:128px;height:128px"> пример правильной подгрузки изображения
+    
+    <p><a href="eye.svg">ссылка на фото Eye.png</a></p>
+    <a>Пустая ссылка</a>
+    <ul>
+      <li>Уменьшение рисков обесценивания</li>
+      <li>деньги находящиеся в кв.м максимально защищены от форсмажора</li>
+      <li>медленный процесс амортизации</li>
+      <li>возможность сразу сдать ее кварттирантм,уменьшив нагрузку на семейный бюджет</li>
+      <li>фундаментальность - всегда можно продать\обменять\сдать</li>
+    </ul>  
+    <ol>
+      <li>ferst</li>
+      <li>second</li>
+    </ol>  
+    -->
+
+
+    <!-- Создайте таблицу на строке ниже -->
+    <!--<table border="1px">
+      <tr>
+          <th>Заголовок 1</th>
+          <th>Заголовок 2</th>
+      </tr>
+      <tr>
+          <td>Flask</td>
+          <td>Быстрый фреймворк</td>
+      </tr>
+      <tr>
+          <td>Django</td>
+          <td>Большой фреймворк</td>
+      </tr>
+          
+      </table>
+      <img src="{{url_for('static',filename='img/1.jpg')}}" alt='Здесь должно быть изображение корабля пиратов)' width="340" height="240">
+      <p></p>
+      <p>Hello, Flask {{name}}.</p>
+      <p>You have number progect -  {{project_name}}.</p>
+
+      {{"<p>Hello my friends!</p>"|striptags|title}} 
+    -->
+
+
+	
+</script>
+   
+</body>
+</html>
