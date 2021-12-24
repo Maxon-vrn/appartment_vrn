@@ -1,3 +1,33 @@
+
+  #navbar {
+    margin: 40;
+    padding: 30;
+    text-align: center;
+    list-style-type: none; 
+    background-color: tomato }
+  
+  #navbar li { display: inline; }
+  
+  #navbar a {
+    color: #fff;
+    padding: 20px 20px;
+    text-decoration: none;/*эффект*/
+    font-weight: bolder;  
+    display: inline-block;
+    width: 200px;/* разнеслись кнопки меню по ширине!?*/
+  }
+  
+  #navbar a:hover {
+    border-radius: 40px 40px;
+    /*font-size:120%; увеличивает при наведении меню*/
+    text-decoration:underline;/*эффект подчеркивания*/
+    background-color: white;
+    color: black;
+  }
+
+
+
+
 .button:link,.button:visited{
   background-color: tomato;
   color:white;
