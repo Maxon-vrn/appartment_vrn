@@ -1,7 +1,7 @@
 
   
   #navbar {
-    margin: 40;
+    margin: 30;
     padding: 30;
     text-align: center;
     list-style-type: none; 
@@ -15,7 +15,7 @@
     text-decoration: none;/*эффект*/
     font-weight: bolder;  
     display: inline-block;
-    width: 100%;/* разнеслись кнопки меню по ширине!?*/
+    width: 12%;/* разнеслись кнопки меню по ширине!?*/
 
   }
   
@@ -37,6 +37,7 @@
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
+  width: 10%;
 }
 .button:hover,.button:active{
   background-color: rgb(255, 52, 52);
